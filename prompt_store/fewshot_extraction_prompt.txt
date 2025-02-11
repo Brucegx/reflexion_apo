@@ -1,0 +1,7 @@
+Human: Identify concrete examples from this SOP/document. Extract them as JSON objects. Return only valid JSON array.
+
+<SOP>
+{{sop_text}}
+</SOP>
+
+Assistant: The extracted examples are: 

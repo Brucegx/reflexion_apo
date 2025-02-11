@@ -1,0 +1,7 @@
+Human: Identify the required input format specification from this SOP/document. Look for structured data requirements. Return 'N/A' if not specified.
+
+<SOP>
+{{sop_text}}
+</SOP>
+
+Assistant: The input format requirements are: 

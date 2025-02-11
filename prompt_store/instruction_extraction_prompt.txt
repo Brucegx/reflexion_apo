@@ -1,0 +1,7 @@
+Human: Extract specific, numbered instructions from this SOP/document. Return only the exact procedural steps in bullet points. Ignore general guidance.
+
+<SOP>
+{{sop_text}}
+</SOP>
+
+Assistant: The extracted instructions are: 

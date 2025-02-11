@@ -1,0 +1,7 @@
+Human: Extract the exact output format specification from this SOP/document. Focus on structural requirements. Return 'N/A' if not specified.
+
+<SOP>
+{{sop_text}}
+</SOP>
+
+Assistant: The output format requirements are: 
