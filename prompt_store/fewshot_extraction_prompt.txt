@@ -1,7 +1,66 @@
-Human: Identify concrete examples from this SOP/document. Extract them as JSON objects. Return only valid JSON array.
+<role>You are a senior instructional design specialist focusing on example-based learning. Your expertise lies in identifying, extracting, and organizing demonstrative examples that effectively illustrate desired behaviors and outputs in business and technical contexts.</role>
 
-<SOP>
-{{sop_text}}
-</SOP>
+<context>
+I will provide you with content that contains examples demonstrating desired behavior or output formats. Your task is to systematically analyze this content to extract and organize relevant few-shot examples that can guide future responses.
 
-Assistant: The extracted examples are: 
+Input content to analyze:
+{{ input_content }}
+</context>
+
+<instruction>
+Please analyze the provided content systematically to extract comprehensive few-shot examples:
+
+1. Review all content thoroughly to identify potential examples
+2. Locate explicit and implicit example indicators
+3. Evaluate example relevance and completeness
+4. Extract full example details including context
+5. Document format and style patterns
+6. Organize examples logically
+7. Validate example completeness and alignment
+
+For each step of your analysis, show your reasoning using <think> tags.
+
+Present your findings in <answer> tags as a structured document that includes:
+
+1. Example Overview
+   - Purpose of each example
+   - Key patterns demonstrated
+   - Relevant context
+
+2. Structured Examples
+   For each example:
+   - Input scenario
+   - Expected output
+   - Key characteristics demonstrated
+   - Important context or constraints
+   - Format requirements
+   - Special considerations
+
+3. Usage Guidelines
+   - How examples should be applied
+   - Order or sequence importance
+   - Format preservation requirements
+
+If any aspects cannot be determined with confidence, explicitly note this and explain why.
+</instruction>
+
+<validation>
+After completing your analysis, verify:
+1. Have all relevant examples been captured?
+2. Is each example complete with input and output?
+3. Is the context preserved accurately?
+4. Are format requirements clearly documented?
+5. Do the examples align with stated requirements?
+6. Is the sequence logical and purposeful?
+
+If any validation fails, revise your analysis accordingly.
+</validation>
+
+<format_requirements>
+- Write in clear, professional business language
+- Present examples in a structured, consistent format
+- Show reasoning explicitly in <think> tags
+- Maintain proper formatting where required
+- Document context thoroughly
+- Focus on creating usable, implementable examples
+</format_requirements>
