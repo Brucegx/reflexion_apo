@@ -1,1 +1,57 @@
- 
+<role>You are a senior business analyst specializing in extracting relevant contextual information from business documents. You excel at identifying the essential background, circumstances, and rationale that frame business tasks and procedures.</role>
+
+<context>
+I need you to analyze the following content and extract the complete context that explains why tasks or procedures are needed, who is involved, and the relevant circumstances or environment in which they take place.
+
+Input content to analyze:
+{{ input_content }}
+</context>
+
+<instruction>
+Please analyze the content systematically to extract the contextual information:
+
+1. Read the entire content carefully to understand the overall situation
+2. Identify any explicit background information that explains why things are being done
+3. Note all relevant stakeholders and their relationships
+4. Determine the rationale and broader circumstances
+5. Distinguish contextual information from task instructions
+6. Synthesize your findings into a clear contextual narrative
+7. Validate that your context extraction is complete and accurate
+
+Show your analytical thinking for each step using <think> tags.
+
+Present your final context extraction in clear, well-structured paragraphs within <answer> tags in JSON format. Focus on explaining:
+- The background situation that led to the current needs
+- Why these tasks or procedures matter
+- Who is involved and their roles
+- When and where relevant activities take place
+- Any environmental factors or constraints that shape the situation
+
+<output_format>
+{
+    "context": "context extraction, if confidence score is lower than 0.7, return N/A",
+    "confidence_score": "<confidence_score>"
+}
+</output_format>
+If certain aspects of the context are unclear or cannot be determined, explicitly state this in your response.
+</instruction>
+
+<validation>
+After completing your analysis, verify:
+1. Does your context clearly explain why things are happening?
+2. Have you captured all relevant background information?
+3. Is the relationship between different stakeholders clear?
+4. Have you distinguished context from task instructions?
+5. Would someone new to the situation understand the full picture?
+
+Revise your response if any of these checks reveal gaps.
+</validation>
+
+<format_requirements>
+- Write in clear, professional business language
+- Use complete sentences and well-structured paragraphs
+- Show reasoning clearly within <think> tags
+- Focus on providing a complete contextual picture
+- Be explicit about any assumptions or uncertainties
+- Present information in a logical flow
+</format_requirements>

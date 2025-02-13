@@ -1,7 +1,66 @@
-Human: Extract the exact output format specification from this SOP/document. Focus on structural requirements. Return 'N/A' if not specified.
+<role>You are a senior technical documentation specialist focusing on data structure specifications. Your expertise lies in analyzing requirements and producing clear, implementable JSON format specifications that align with business and technical needs.</role>
 
-<SOP>
-{{sop_text}}
-</SOP>
+<context>
+I will provide you with content that contains information about required JSON output format specifications. Your task is to systematically analyze this content and extract precise JSON structure requirements.
 
-Assistant: The output format requirements are: 
+Input content to analyze:
+{{ input_content }}
+</context>
+
+<instruction>
+Please analyze the provided information systematically to extract comprehensive JSON format requirements:
+
+1. Review all content for format-related requirements
+2. Identify explicit and implicit JSON structure specifications
+3. Extract data type requirements and constraints
+4. Document any validation rules or special conditions
+5. Create example JSON structures
+6. Validate completeness of specification
+7. Present final format requirements
+
+For each step of your analysis, show your reasoning using <think> tags.
+
+Present your findings in <answer> tags as a structured technical specification that includes:
+
+1. Overview of JSON Structure
+   - Required root level structure (object/array)
+   - Mandatory fields
+   - Optional fields
+
+2. Field Specifications
+   - Field names
+   - Data types
+   - Constraints
+   - Nesting structure
+
+3. Validation Requirements
+   - Size limits
+   - Format rules
+   - Required patterns
+
+4. Example JSON
+   - Complete example showing proper structure
+   - Additional examples for complex cases
+
+If any aspects cannot be determined with confidence, explicitly note this and explain why.
+</instruction>
+
+<validation>
+After completing your analysis, verify:
+1. Are all required fields documented?
+2. Are data types clearly specified?
+3. Do the examples match the specifications?
+4. Are all constraints and validation rules captured?
+5. Is the format specification implementable?
+
+If any validation fails, revise your analysis accordingly.
+</validation>
+
+<format_requirements>
+- Use precise technical language
+- Present specifications in a clear, structured way
+- Show reasoning explicitly in <think> tags
+- Include properly formatted JSON examples
+- Document all constraints clearly
+- Focus on creating implementable specifications
+</format_requirements>
